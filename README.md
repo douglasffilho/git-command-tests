@@ -1,5 +1,5 @@
 # Atalhos úteis utilizando Bash Script
-## Para funcionar, adicione o conteudo do arquivo [`.bashrc`](https://github.com/douglasffilho/git-command-tests/blob/master/.bashrc) ao fim de seu arquivo .bashrc (geralmente localizado em sua raiz do linux `/home/<user>/.bashrc`
+## Para funcionar, adicione o conteudo do arquivo [`.bashrc`](https://github.com/douglasffilho/git-command-tests/blob/master/.bashrc) ao fim de seu arquivo .bashrc (geralmente localizado em sua raiz do linux `/home/<user>/.bashrc`)
 
 ### Git Clone
 #### clona um repositório remoto para o local
@@ -20,13 +20,12 @@ gc git@github.com:douglasffilho/git-command-tests.git
 git add .
 git stash
 git pull
-git checkout -b new-branch
-git push -u origin new-branch
+git checkout -b $1
+git push -u origin $1
 git stash apply
 git stash drop
-git add .
 ```
 - shortcut: (precisa do arquivo [.git-remote-branch.sh](https://github.com/douglasffilho/git-command-tests/blob/master/.git-remote-branch.sh) no diretório raiz)
 ```bash
-gcb new-branch git@github.com:douglasffilho/git-command-tests.git
+gcb new-branch
 ```
